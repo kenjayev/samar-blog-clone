@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+section {
+    position: relative;
+    padding: 100px;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Start of Button style */
+.btn {
+    display: inline-block;
+    background-color: crimson;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 25px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background-color 0.5s, color 0.5s;
+}
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+/* End of Button style */
+
+/* Start of Section Title style */
+.section-title__wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-title {
+    position: relative;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 800;
+    color: crimson;
+    margin-bottom: 60px;
+}
+.section-title::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 80%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 3px solid crimson;
+}
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 15px;
+    height: 15px;
+    background-color: crimson;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.section-subtitle {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+/* And of Section Title style */
+
+/* Start double content */
+.double-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.double-content > .column {
+    position: relative;
+    width: 45%;
+}
+/* End double content */
+
+/* animation */
+@keyframes text-move {
+    0% {
+        margin-top: 0;
+    }
+    25% {
+        margin-top: -70px;
+    }
+    50% {
+        margin-top: -140px;
+    }
+    75% {
+        margin-top: -70px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+/* end of animation */
